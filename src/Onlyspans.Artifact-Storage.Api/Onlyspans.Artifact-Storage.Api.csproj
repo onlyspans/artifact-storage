@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>Onlyspans.Artifact_Storage.Api</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Grpc.AspNetCore" Version="2.*" />
+        <PackageReference Include="Google.Protobuf" Version="3.*" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.*" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.*">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Serilog.AspNetCore" Version="9.*" />
+        <PackageReference Include="Serilog.Sinks.File" Version="6.*" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="7.*" />
+        <PackageReference Include="AWSSDK.S3" Version="3.*" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Protobuf Include="Grpc\Protos\artifact-storage.proto" GrpcServices="Server" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <InternalsVisibleTo Include="Onlyspans.Artifact-Storage.Api.Tests" />
+    </ItemGroup>
+
+</Project>

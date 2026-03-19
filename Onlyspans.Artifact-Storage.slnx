@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src\Onlyspans.Artifact-Storage.Api\Onlyspans.Artifact-Storage.Api.csproj" Type="Classic C#" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests\Onlyspans.Artifact-Storage.Api.Tests\Onlyspans.Artifact-Storage.Api.Tests.csproj" Type="Classic C#" />
+  </Folder>
+</Solution>
