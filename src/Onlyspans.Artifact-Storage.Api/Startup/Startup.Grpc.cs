@@ -11,6 +11,7 @@ public static partial class Startup
             options.MaxReceiveMessageSize = null;
             options.MaxSendMessageSize = null;
         });
+        services.AddGrpcReflection();
 
         return services;
     }
@@ -18,6 +19,7 @@ public static partial class Startup
     public static WebApplication MapGrpcEndpoints(this WebApplication app)
     {
         app.MapGrpcService<ArtifactStorageGrpcService>();
+        app.MapGrpcReflectionService();
         return app;
     }
 }
