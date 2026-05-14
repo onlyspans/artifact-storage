@@ -481,3 +481,6 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+
+
+src/Onlyspans.Artifact-Storage.Api/Data/artifact-storage/
